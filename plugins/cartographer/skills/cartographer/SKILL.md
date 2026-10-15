@@ -1,6 +1,6 @@
 ---
 name: cartographer
-description: Maps and documents codebases of any size by orchestrating parallel subagents. Creates docs/CODEBASE_MAP.md with architecture, file purposes, dependencies, and navigation guides. Updates CLAUDE.md with a summary. Use when user says "map this codebase", "cartographer", "/cartographer", "create codebase map", "document the architecture", "understand this codebase", or when onboarding to a new project. Automatically detects if map exists and updates only changed sections.
+description: Maps and documents codebases of any size by orchestrating parallel subagents. Creates docs/CODEBASE_MAP.md with architecture, file purposes, dependencies, and navigation guides. Updates AGENTS.md with a summary. Use when user says "map this codebase", "cartographer", "/cartographer", "create codebase map", "document the architecture", "understand this codebase", or when onboarding to a new project. Automatically detects if map exists and updates only changed sections.
 ---
 
 # Cartographer
@@ -15,7 +15,7 @@ Maps codebases of any size using parallel Sonnet subagents.
 2. Analyze the scan output to plan subagent work assignments
 3. Spawn Sonnet subagents in parallel to read and analyze file groups
 4. Synthesize subagent reports into `docs/CODEBASE_MAP.md`
-5. Update `CLAUDE.md` with summary pointing to the map
+5. Update `AGENTS.md` with summary pointing to the map
 
 ## Workflow
 
@@ -240,9 +240,9 @@ sequenceDiagram
 [etc.]
 ```
 
-### Step 7: Update CLAUDE.md
+### Step 7: Update AGENTS.md
 
-Add or update the codebase summary in CLAUDE.md:
+Add or update the codebase summary in AGENTS.md:
 
 ```markdown
 ## Codebase Overview
